@@ -66,7 +66,7 @@ export default function Register() {
 
     return (
         <div className='h-screen bg-gray-100 flex justify-center items-center'>
-            <div className='w-96 border shadow-md bg-white rounded-md px-4 pb-10'>
+            <div className='w-96 border shadow-md bg-white rounded-md px-4 pb-10 'style={{ animation: 'fadeIn 1s' }}>
                 <div className='font-bold text-3xl text-center pt-3 mt-5'>Register</div>
                 <div className='mt-4 font-semibold '>Username :</div>
                 <div className='relative'>

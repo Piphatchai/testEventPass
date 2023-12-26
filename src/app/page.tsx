@@ -81,7 +81,7 @@ export default function Home() {
 
   return (
     <div className='h-screen bg-blue-300 flex justify-center items-center'>
-      <div className='w-96 border shadow-md bg-white rounded-md px-4 pb-10'>
+      <div className='w-96 border shadow-md bg-white rounded-md px-4 pb-10 'style={{ animation: 'fadeIn 1s' }}>
         <div className='font-bold text-3xl text-center pt-3 mt-5'>Login</div>
         <div className='mt-2 font-semibold '>Username :</div>
         <div className='relative'>
