@@ -109,9 +109,9 @@ export default function Home() {
         <div className='flex justify-center items-center mt-10' >
           <span className='bg-blue-500 px-14 py-1 rounded-full text-white cursor-pointer transition duration-300 hover:bg-green-500' onClick={checkLogin}>Login</span>
         </div>
-        <Link href='/register'><div className='text-end text-blue-500 mt-5 underline '>
-          Register
-        </div></Link>
+        <div className='text-end text-blue-500 mt-5 underline '>
+          <Link href='/register'> Register</Link>
+        </div>
 
 
       </div>
