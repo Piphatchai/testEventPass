@@ -95,9 +95,9 @@ export default function Register() {
                 <div className='flex justify-center items-center mt-10' >
                     <span className='bg-blue-500 px-14 py-1 rounded-full text-white cursor-pointer transition duration-300 hover:bg-green-500' onClick={checkRegister}>Register</span>
                 </div>
-                <Link href='/'><div className='text-end text-blue-500 mt-5 underline'>
-                    Back
-                </div></Link>
+                <div className='text-end text-blue-500 mt-5 underline'>
+                    <Link href='/'> Back</Link>
+                </div>
 
 
 
