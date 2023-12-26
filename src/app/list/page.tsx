@@ -173,7 +173,7 @@ export default function List() {
     return (
 
         <div className='w-full'>
-            <div className='max-w-[1440px] mx-auto relative px-4'>
+            <div className='max-w-[1440px] mx-auto relative px-4'style={{ animation: 'fadeIn 1s' }}>
                 <div className='text-center font-bold text-3xl mt-20 '>Hello ReqRes users!</div>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10 relative'>
                     {dataList.map((item: List, index: number) => (
@@ -204,7 +204,7 @@ export default function List() {
                                  1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 
                                  1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" /></svg></div>
 
-                            {editFunction === index && (<div className='flex justify-between px-4 mt-5' ref={refOne}>
+                            {editFunction === index && (<div className='flex justify-between px-4 mt-5' ref={refOne} style={{ animation: 'fadeIn 1s' }}>
                                 <div className=''><span className='bg-green-600 px-5 py-1 text-white rounded-full cursor-pointer' onClick={() => { setShowEdit(true) }}>Edit</span></div>
                                 <div className=''><span className='bg-red-600 px-5 py-1 text-white rounded-full cursor-pointer' onClick={() => { deleteSend(item.id) }}>Delete</span></div>
                             </div>)}
@@ -218,7 +218,7 @@ export default function List() {
 
             </div>
             {showEdit && (
-                <div className='w-full z-10 flex justify-center items-center h-screen backdrop-blur-sm  bg-black bg-opacity-50 absolute top-0'>
+                <div className='w-full z-10 flex justify-center items-center h-screen backdrop-blur-sm  bg-black bg-opacity-50 absolute top-0'style={{ animation: 'fadeIn 0.5s' }}>
                     <div className='z-20 border w-96 rounded-lg bg-white  px-4 pb-10 relative'>
                         <div className='text-center  text-xl font-semibold pt-5'>ID : {dataEdit?.id}</div>
                         <div className='mt-5'>Username : {dataEdit?.first_name} </div>
